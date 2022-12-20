@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+
+  /* background-size: cover; */
+  overflow-y: auto;
+  font-family: "Raleway", sans-serif;
+}
+.wrapper {
+  display: flex;
+  height: 100%;
+  overflow-y: auto;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1440px;
+  height: 90%;
+  margin: auto;
+  border-radius: 1rem;
+  background: url("../images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  background-color: hsl(229, 57%, 11%);
+}
+
+.data-storage-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+.storage-info {
+  background-color: hsl(228, 56%, 26%);
+  width: 23rem;
+  padding: 2.5rem;
+  border-radius: 1rem 6rem 1rem 1rem;
+}
+.logo {
+  margin-bottom: 2rem;
+}
+
+.storage-type {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.storage-type .storage-img {
+  height: 3.3rem;
+  text-align: center;
+  width: 3.3rem;
+  background-color: hsl(229, 57%, 11%);
+  display: flex;
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.storage-usage-container {
+  width: 35rem;
+  height: 10rem;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 1rem;
+  padding: 2rem 2.5rem;
+  position: relative;
+}
+.info-text {
+  color: hsl(243, 100%, 93%);
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.progress-bar {
+  width: 100%;
+  height: 1rem;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 100px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+.active-progress {
+  position: relative;
+  width: 75%;
+  height: 100%;
+  border-radius: 100px;
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+.active-progress::before {
+  position: absolute;
+  content: "";
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 100%;
+  background-color: #fff;
+  right: 1px;
+  top: 2.5px;
+  margin-right: 0.1rem;
+}
+
+.usage-limit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: hsl(243, 100%, 93%);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.gb-left {
+  position: absolute;
+  right: 2.5rem;
+  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  gap: 0.5rem;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem 1rem 0 1rem;
+}
+
+.gb-left::after {
+  content: " ";
+  position: absolute;
+  right: 0;
+  bottom: -17px;
+  border-top: 18px solid #fff;
+  border-left: 18px solid transparent;
+  border-bottom: none;
+}
+.gb-left strong {
+  font-weight: 700;
+  font-size: 3rem;
+}
+.gb-left span {
+  font-weight: 700;
+  color: hsl(229, 7%, 55%);
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

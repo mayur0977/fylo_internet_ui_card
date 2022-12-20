@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/main.css" />
+    <link rel="stylesheet" href="assets/styles/queries.css" />
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="container">
+        <div class="data-storage-container">
+          <div class="storage-info">
+            <figure class="logo">
+              <img src="assets/images/logo.svg" alt="Logo" />
+            </figure>
+
+            <div class="storage-type">
+              <div class="storage-img">
+                <figure>
+                  <img
+                    src="assets/images/icon-document.svg"
+                    alt="Storage document"
+                  />
+                </figure>
+              </div>
+              <div class="storage-img">
+                <figure>
+                  <img
+                    src="assets/images/icon-folder.svg"
+                    alt="Storage folder"
+                  />
+                </figure>
+              </div>
+              <div class="storage-img">
+                <figure>
+                  <img
+                    src="assets/images/icon-upload.svg"
+                    alt="Storage cloud"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+          <div class="storage-usage-container">
+            <div class="gb-left"><strong>185</strong><span> gb left</span></div>
+            <div class="storage-usage">
+              <h3 class="info-text">
+                You’ve used <strong>815 GB</strong> of your storage
+              </h3>
+              <div class="progress-bar">
+                <div class="active-progress"></div>
+              </div>
+              <div class="usage-limit">
+                <span class="gb-text">0 GB</span>
+                <span class="gb-text">1000 GB</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
